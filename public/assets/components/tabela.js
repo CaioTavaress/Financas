@@ -51,12 +51,6 @@ async function excluirEntrada(id) {
   }
 }
 
-function renderResumo() {
- 
-  parcelasDevedoras.textContent = `R$: ${resumo.gastos.toFixed(2)}`;
-  parcelasRecebiveis.textContent = `R$: ${resumo.ganhos.toFixed(2)}`;
-  saldoParcelas.textContent = `R$: ${resumo.saldo.toFixed(2)}`
-  totalDevedor.textContent = `R$: ${resumo.total.toFixed(2)}`
-}
+
 
 export { renderTabela, renderResumo };
