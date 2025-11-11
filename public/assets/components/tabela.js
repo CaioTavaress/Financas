@@ -1,5 +1,5 @@
 // public/assets/components/tabela.js
-import { recuperarEntradas, dadosAnaliticos } from '../../../modules/entradasregistradas.js';
+
 import { collection, getDocs, onSnapshot, doc, deleteDoc } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
 import { db } from "./firebase.js";
 
