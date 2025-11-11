@@ -28,13 +28,13 @@ function handleSalvar(e) {
   e.preventDefault();
   const novaEntrada = obterEntrada();
   adicionarentrada("entradas",novaEntrada)
-  adicionarEntrada(novaEntrada);
+
   limparFormulario();
   atualizarTudo();
 }
 
 function handleExcluir(indice) {
-  excluirEntrada(indice);
+ 
   atualizarTudo();
 }
 
