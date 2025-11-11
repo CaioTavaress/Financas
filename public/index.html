@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finanças</title>
+  
+  <script src="https://kit.fontawesome.com/893826979f.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="./assets/css/entrada.css">
+</head>
+
+<body>
+  
+  <section class="sessaoEntradas">
+  <div id="sessao">REGISTRE SUA ENTRADA</div>
+  <form class="entradas" accept-charset="utf-8">
+    <section>
+      <label for="nome-entrada">Nome</label>
+      <input type="text" name="nome-entrada" id="nome-entrada" placeholder="" />
+    </section>
+    <section>
+      <label for="valor-entrada">Valor</label>
+      <input type="number" name="valor-entrada" id="valor-entrada" placeholder="" />
+    </section>
+    <section>
+      <label for="vencimento-entrada">Vencimento</label>
+      <input type="number" name="vencimento-entrada" id="vencimento-entrada" placeholder="" />
+    </section>
+   <section>
+      <label for="parcelas-entrada">Parcelas</label>
+      <input type="number" name="parcelas-entrada" id="parcelas-entrada" placeholder="" />
+   </section>
+   <section>
+     <select id="tipo-entrada">
+       <option>Tipo de Entrada</option>
+       <option value="ganho">Ganho</option>
+       <option value="gasto">Gasto</option>
+     </select>
+   </section>
+   <section id="menu-entrada">
+     <input type="submit" name="salvar-entrada" id="salvar-entrada" value="Salvar"/>
+   </section>
+  </form>
+  </section>
+  
+  
+  <table id="tabela">
+    <thead>
+      <tr>
+        <th>descrição</th>
+        <th>valor</th>
+        <th>parcelas</th>
+        <th>tipo</th>
+        <th>vencimento</th>
+        <th>ações</th>
+        <th>pago</th>
+        <th>devedor</th>
+      </tr>
+    </thead>
+    <tbody id="corpo-tabela">
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Resumo</td>
+        <td id="parcelas-devedoras"></td>
+        <td id="parcelas-recebiveis"></td>
+        <td></td>
+        <td id="saldo_parcelas"></td>
+        <td></td>
+        <td></td>
+        <td id="total-devedor"></td>
+      </tr>
+    </tfoot>
+  </table>
+  
+  
+  
+  <script type="module" src="assets/components/firebase.js"></script>
+  <script type="module" src="assets/components/salvar.js"></script>
+  <script type="module" src="assets/components/tabela.js"></script>
+</body>
+
+</html>
