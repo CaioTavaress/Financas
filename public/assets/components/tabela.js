@@ -53,4 +53,4 @@ async function excluirEntrada(id) {
 
 
 
-export { renderTabela, renderResumo };
+export { renderTabela };
