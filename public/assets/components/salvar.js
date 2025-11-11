@@ -1,5 +1,5 @@
 // public/assets/components/salvar.js
-import { adicionarEntrada, excluirEntrada } from '../../../modules/entradasregistradas.js';
+
 import { renderTabela, renderResumo } from './tabela.js';
 import { adicionarentrada } from './firebase.js'
 const form = document.querySelector('.entradas');
