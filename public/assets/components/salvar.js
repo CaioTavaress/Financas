@@ -1,6 +1,6 @@
 // public/assets/components/salvar.js
 
-import { renderTabela, renderResumo } from './tabela.js';
+import { renderTabela } from './tabela.js';
 import { adicionarentrada } from './firebase.js'
 const form = document.querySelector('.entradas');
 
@@ -21,7 +21,7 @@ function limparFormulario() {
 
 function atualizarTudo() {
   renderTabela(handleExcluir);
-  renderResumo();
+ 
 }
 
 function handleSalvar(e) {
