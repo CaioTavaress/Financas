@@ -52,7 +52,7 @@ async function excluirEntrada(id) {
 }
 
 function renderResumo() {
-  const resumo = dadosAnaliticos();
+ 
   parcelasDevedoras.textContent = `R$: ${resumo.gastos.toFixed(2)}`;
   parcelasRecebiveis.textContent = `R$: ${resumo.ganhos.toFixed(2)}`;
   saldoParcelas.textContent = `R$: ${resumo.saldo.toFixed(2)}`
